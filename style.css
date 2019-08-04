@@ -1,0 +1,79 @@
+/*
+ CSS Stylesheet for Latitude Web Visualization
+ */
+
+/* Styling for HTML elements */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Classes */
+.list-item-left {
+  float: left;
+}
+
+.list-item-right {
+  float: right;
+}
+
+.box {
+  min-height: 50px;
+  padding: 25px;
+  margin: 5px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.bg-gray {
+  background: darkgray;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-cyan {
+  background: cyan;
+}
+
+.fg-green {
+  color: green;
+}
+
+.fg-black {
+  color: black;
+}
+
+img-left {
+  float: left;
+}
+
+img.resize-50 {
+  max-width:50%;
+  max-height:50%;
+}
+
+img.resize-150 {
+  max-width:150%;
+  max-height:150%;
+}
+
+.font-paragraph-text {
+  font-size: 8pt;
+}
