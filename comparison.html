@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analysis Comparison</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <ul>
+      <li class="list-item-left"><a href="#home">Latitude</a></li>      
+      <li class="list-item-right"><a href="data.html">Data</a></li>
+      <li class="list-item-right"><a class="active" href="comparison.html">Comparison</a></li>
+      <li class="list-item-right"><a href="plots.html">Plots</a></li>
+    </ul>
+
+    <div class="container bg-gray" style="border:50px solid lightgray">
+        <div class="row bg-gray">
+            <div class="col-md-12">
+                <div class="col-md-12 bg-white">
+                <div class="box">
+                    <h3 class="fg-green">Comparison: Latitude vs X</h3>
+                    <hr>
+                    <h5 class="fg-black">Click any plot to get an in-depth analysis</h5>
+                    <hr>
+                    <div class="row">
+                    <div class="col-md-6 fg-black">
+                        <div class="col-md-12">
+                            <p class="fg-green detail-text text-center">vs Max Temperature</p>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="vs_temp.html">
+                            <img class="img-fluid" src="Resources/assets/images/Fig1.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fg-black">
+                        <div class="col-md-12">
+                            <p class="fg-green detail-text text-center">vs Humidity</p>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="vs_humid.html">
+                            <img class="img-fluid" src="Resources/assets/images/Fig2.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fg-black">
+                        <div class="col-md-12">
+                            <p class="fg-green detail-text text-center">vs Cloudiness</p>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="vs_cloud.html">
+                            <img class="img-fluid" src="Resources/assets/images/Fig3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fg-black">
+                        <div class="col-md-12">
+                            <p class="fg-green detail-text text-center">vs Wind Speed</p>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="vs_wind.html">
+                            <img class="img-fluid" src="Resources/assets/images/Fig4.png">
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

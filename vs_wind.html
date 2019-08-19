@@ -3,7 +3,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Latitude Analysis Dashboard</title>
+  <title>Latitude vs Wind Speed</title>
 
   <!-- This line is money! It points your HTML to the CSS file. -->
   <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
@@ -13,10 +13,10 @@
 
 <body>
     <ul>
-      <li class="list-item-left"><a class="active" href="#home">Latitude</a></li>      
+      <li class="list-item-left"><a href="#home">Latitude</a></li>      
       <li class="list-item-right"><a href="data.html">Data</a></li>
       <li class="list-item-right"><a href="comparison.html">Comparison</a></li>
-      <li class="list-item-right"><a href="">Plots</a></li>
+      <li class="list-item-right"><a class="active" href="plots.html">Plots</a></li>
     </ul>
 
     <div class="container bg-gray" style="border:50px solid lightgray">
@@ -24,21 +24,21 @@
             <div class="col-md-8">
                 <div class="col-md-12 bg-white">
                 <div class="box">
-                    <h3 class="fg-green">Summary: Latitude vs X</h3>
-                    <hr>
-                    <img class="resize-50" align="left" src="Resources/assets/images/Fig1.png">
-                    <font class="fg-black font-paragraph-text">
-                    <p>The purpose of this project was to analyze how weather changes as you
-                    get closer to the equator.  To accompliosh this analysis, we first
-                    pulled data from the OpenWeatherMap API to assemble a dataset on over
-                    500 cities.</p>
-                    <p>After assembling the dataset, we used MatPlotLib to plot various aspects
-                    of weather vs latitude.  Factors we looked at included: temperature, cloudiness,
-                    wind speed, and humidity.  This site provides the source data and visualizations
-                    created as part of the analysis, as well as expolanations and descriptions
-                    of any trends and correlations witnessed.
-                    </p>
-                    </font>
+                    <div class="col-md-12">
+                    <h3 class="fg-green">Wind Speed</h3>
+                    </div>
+                    <div class="col-md-12">
+                    <img class="img-fluid" src="Resources/assets/images/Fig4.png">
+                    </div>
+                    <div class="col-md-12 fg-black detail-text">
+                        <p>There are a few cities with very high winds in the far
+                            northern hemisphere that is not mirroed in southern
+                            hemisphere.  However, this may reflect a lack of cities,
+                            not a lack of wind speed.  The far reaches of the southern
+                            hemisphere is almost all water.  There are no large land masses
+                            and countries like Russia and Canada in the north.
+                        </p>
+                    </div>
                 </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <div class="col-md-6 fg-black">
                         <img class="img-fluid" src="Resources/assets/images/Fig3.png">
                     </div>
-                    <div class="col-md-6 fg-black">
+                    <div class="col-md-6 fg-black green-border">
                         <img class="img-fluid" src="Resources/assets/images/Fig4.png">
                     </div> 
                     </div>

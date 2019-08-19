@@ -11,12 +11,26 @@ ul {
   background-color: #333;
 }
 
+ul ul {
+  position: absolute;
+  display: hidden;
+}
+
+li {
+  display: inline;
+  position: relative;
+}
+
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+li:hover ul {
+  display: block;
 }
 
 li a:hover {
@@ -40,8 +54,12 @@ li a:hover {
   color: #fff;
 }
 
+.active {
+  background: seagreen;
+}
+
 .bg-gray {
-  background: darkgray;
+  background: lightgray;
 }
 
 .bg-white {
@@ -76,4 +94,12 @@ img.resize-150 {
 
 .font-paragraph-text {
   font-size: 8pt;
+}
+
+.detail-text {
+  font-weight: normal;
+}
+
+.green-border {
+  border:1px solid seagreen;
 }
