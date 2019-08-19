@@ -3,6 +3,7 @@
  */
 
 /* Classes */
+
 .box {
   min-height: 50px;
   padding: 25px;
@@ -23,10 +24,6 @@
   background: white;
 }
 
-.fg-white {
-  color: white;
-}
-
 .bg-cyan {
   background: cyan;
 }
@@ -37,6 +34,20 @@
 
 .fg-black {
   color: black;
+}
+
+img-left {
+  float: left;
+}
+
+img.resize-50 {
+  max-width:50%;
+  max-height:50%;
+}
+
+img.resize-150 {
+  max-width:150%;
+  max-height:150%;
 }
 
 .font-paragraph-text {
